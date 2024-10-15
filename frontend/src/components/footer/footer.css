@@ -1,0 +1,8 @@
+.footer {
+    background-color: #f0e7f4; /* Light pink background */
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

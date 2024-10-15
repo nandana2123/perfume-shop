@@ -1,4 +1,5 @@
 require('dotenv').config(); // Load environment variables
+const cors = require('cors');
 const mongoose = require('mongoose');
 const express = require('express'); // Ensure you have Express installed
 
@@ -18,7 +19,9 @@ connectDB();
 //Express app
 const app = express();
 // Middleware 
+app.use(cors());
 app.use(express.json());
+
 app.get('/', (req, res) => {
     res.send('Welcome to the Perfume Shop API!');
 });
